@@ -13,13 +13,19 @@
 <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Agatha' rel='stylesheet'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
+<link rel="stylesheet" href="/static/main.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Comforter+Brush&family=Ms+Madi&family=WindSong&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=WindSong&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/bootstrap-5.0.0-beta2.min.css" />
+<link rel="stylesheet" href="/static/LineIcons.2.0.css" />
+<link rel="stylesheet" href="/static/tiny-slider.css" />
+<link rel="stylesheet" href="/static/animate.css" />
+<link rel="stylesheet" href="/static/main.css" />
+
 <style>
 body {font-family: "Lato", sans-serif;
 margin:0;
@@ -74,104 +80,101 @@ overflow-x:hidden;}
     <li><a href="#contact">Contact</a></li>
  
   </ul>
-<!-- Navbar 
- <div class="w3-top"  style="overflow-x:hidden;">
-  <div class="w3-bar w3-black w3-card" style="background-color: grey; overflow-x:hidden">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" style="background-color: grey"><i class="fa fa-bars"></i></a>
-    <a href="/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
-    <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RECOMMEND</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>  -->
-  </div>
-</div>
+  
 
- <!--Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-  <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
-  <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RECOMMEND</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>-->
 
-</div> 
+<!-- preloader end
 
-<!-- <nav class="navbar navbar-inverse" style:"border-radius: 0px; padding:0px;">
-    <div class="container-fluid" style:"border-radius: 0px; padding:0px;">
-      <div class="navbar-header" style:"border-radius: 0px; padding:0px;">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Dastaan</a>
+<!-- ========================= header start ========================= -->
+
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10">
+        <div class="hero-content">
+          <h1>Movie recommendation solutions with <span>Manoranjan</span></h1>
+          <p> using content based filtering</p>
+
+          <a class="main-btn btn-hover">Demo</a>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar" style:"border-radius: 0px; padding:0px;">
-        <ul class="nav navbar-nav "style:"border-radius: 0px; padding:0px;">
-            
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="/home">Recommend</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-       
+      <div class="col-xxl-6 col-xl-6 col-lg-6 offset-xxl-1">
+        <div class="hero-image text-center text-lg-start">
+          <img src="/static/recommendation.png" alt="" />
+        </div>
       </div>
     </div>
-  </nav> -->
-  
+  </div>
+</section>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:100%;">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="static/movie8.png" style="width:100%">
-    <div class=" left heading1 inline1" style="position:absolute; top:35%;left:15% ;color:white;font-family: 'WindSong',cursive;font-size:88px;">dastaan</div>
-   <!-- <div class=" left heading2 inline2" style="position:absolute; top:48%;left:19% ;color:white;opacity:0.5;"><h4 ><i><b>don't wait, watch it right away.</h4></div>-->
-      <!-- <p><b>We had the best time playing at Venice Beach!</b></p>    -->
-    </div>
-  </div>
-  <!-- <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div> -->
-
-  <!-- The About Us Section -->
+<!-- The About Us Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px ; overflow-x:hidden;" id="about">
+   
     <h2 class="w3-wide">Dastaan</h2>
     <p class="w3-opacity"><i>Don't wait, watch it right away.</i></p>
     <p class="w3-justify">Wait and watch? No more. It's always been a problem searching for the movies similar to your favorites, Right?.You had to go to Google ,search for the reviews,search for the genre then repeat the cycle again and again.So, What you gotta do is, come at Dastaan and get your problem solved. You enter any movie , and we get you the list of movies similar to the one you entered.Get yourself a comfortable seat, grab your popcorn and binge watch all your favorites. </p>
-    <!-- <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div> -->
-  </div>
 
+  </div>
+  <section id="feature-1" class="feature-section-1">
+    <div class="shape-image">
+      <img src="/static/about.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-last order-lg-first">
+          <div class="feature-image text-center text-lg-start">
+            <img src="/assets/images/feature/feature-img-1.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-5 col-md-10 offset-xxl-1">
+          <div class="feature-content-wrapper">
+            <div class="section-title">
+              <h2 class="mb-20">Manoranjan!</h2>
+              <p class="mb-30">
+                
+              </p>
+              <a href="/timeline" class="main-btn btn-hover border-btn"
+                >My timeline</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feature-1" class="feature-section-1">
+    <div class="shape-image">
+      <img src="/static/about.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-last order-lg-first">
+          <div class="feature-image text-center text-lg-start">
+            <img src="/assets/images/feature/feature-img-1.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-xxl-5 col-md-10 offset-xxl-1">
+          <div class="feature-content-wrapper">
+            <div class="section-title">
+              <h2 class="mb-20">Witness my journey through this timeline!</h2>
+              <p class="mb-30">
+                Different challenges that I faced all through these 4 weeks,
+                how I overcame them and what I learnt from those mistakes.
+              </p>
+              <a href="/timeline" class="main-btn btn-hover border-btn"
+                >My timeline</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- The Tour Section -->
-  <div class="w3-black" id="services" style:"overflow-x:hidden;max-width:100%;">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" style:"overflow-x:hidden;max-width:100%;">
+  <div class="w3-black" id="services" style="overflow-x:hidden;max-width:100%;">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" style="overflow-x:hidden;max-width:100%;">
       <h2 class="w3-wide w3-center" >OUR SERVICES</h2>
       <p class="w3-opacity w3-center"><i>We recommend,you watch!</i></p><br>
 
@@ -246,6 +249,7 @@ overflow-x:hidden;}
 </footer>
 
 <script>
+  
 // Automatic Slideshow - change image every 4 seconds
  var myIndex = 0;
  carousel();
@@ -274,6 +278,10 @@ function myFunction() {
 
 
 </script>
-
+<script src="/static/bootstrap-5.0.0-beta2.min.js"></script>
+    <script src="/static/tiny-slider.js"></script>
+    <script src="/static/wow.min.js"></script>
+    <script src="/static/polyfill.js"></script>
+    <script src="/static/js/main.js"></script>
 </body>
 </html>
