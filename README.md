@@ -15,7 +15,7 @@
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
-![Screenshot (427)](https://user-images.githubusercontent.com/84725791/170883315-e70c4489-b62b-4a7b-8edd-8e8d82880d94.png)
+
 
 ## INTRODUCTION:
   In the era of the 21st century, when the world is running at a speed that seems like the speed of air, All developers, workers, or any other working profession is so much busy in their world! But, What about Entertainment (Manoranjan!), Entertainment is not just for health but it is also good for our soul! For this, my Manoranjan website will help you, as it contains at least more than 5000 movie datasets according to your choice! You always search on google for movie ratings, and know about top casts! This recommendation engine will help you to solve this! You don’t need to google each and everything about movie. You have our “Manoranjan App” for this, not only this, you can add your favorite movie like a to-do list for later!
