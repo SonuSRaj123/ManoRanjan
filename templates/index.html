@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Dastaan</title>
+<title>Manoranjan</title>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Agatha' rel='stylesheet'>
@@ -32,9 +32,7 @@ margin:0;
 overflow-x:hidden;}
 .mySlides {display: none}
 
- 
-  
-  ul.topnav {
+ul.topnav {
     max-width:100%;
     list-style-type: none;
     margin: 0;
@@ -43,7 +41,8 @@ overflow-x:hidden;}
     background-color: #203344;
   }
   
-  ul.topnav li {float: left;}
+  ul.topnav li {float: left;
+  }
   
   ul.topnav li a {
     display: block;
@@ -56,7 +55,6 @@ overflow-x:hidden;}
   ul.topnav li a:hover:not(.active) {background-color: #111;}
   
   ul.topnav li a.active {
-  /* background-color: #5b605f;*/
     background-color: #694033;
     }
   
@@ -67,17 +65,16 @@ overflow-x:hidden;}
     ul.topnav li {float: none;}
   }
   </style>
-
 </head>
 <body>
-
 <!--    <body id="content" > -->
   <ul class="topnav">
-    <li><a class="active" href="/">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="/home">Recommend</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><img src="/static/logo (2).svg" alt="Logo"></li>
+    <li><a style="margin-top:10px;" class="active" href="/">Home</a></li>
+    <li><a style="margin-top:10px;" href="#check_about">About</a></li>
+    <li><a style="margin-top:10px;" href="#section">Features</a></li>
+    <li><a style="margin-top:10px;" href="/home">Recommend</a></li>
+    <li><a style="margin-top:10px;" href="#timeline">Timeline</a></li>
  
   </ul>
   
@@ -87,7 +84,7 @@ overflow-x:hidden;}
 
 <!-- ========================= header start ========================= -->
 
-<section id="home" class="hero-section">
+<section id="home" class="hero-section"  style="background-image: url(/static/hero-bg.svg)";>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10">
@@ -108,15 +105,7 @@ overflow-x:hidden;}
 </section>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:100%;">
-<!-- The About Us Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px ; overflow-x:hidden;" id="about">
-   
-    <h2 class="w3-wide">Dastaan</h2>
-    <p class="w3-opacity"><i>Don't wait, watch it right away.</i></p>
-    <p class="w3-justify">Wait and watch? No more. It's always been a problem searching for the movies similar to your favorites, Right?.You had to go to Google ,search for the reviews,search for the genre then repeat the cycle again and again.So, What you gotta do is, come at Dastaan and get your problem solved. You enter any movie , and we get you the list of movies similar to the one you entered.Get yourself a comfortable seat, grab your popcorn and binge watch all your favorites. </p>
 
-  </div>
   <section id="feature-1" class="feature-section-1">
     <div class="shape-image">
       <img src="/static/about.png" alt="" />
@@ -125,19 +114,76 @@ overflow-x:hidden;}
       <div class="row align-items-center">
         <div class="col-lg-6 order-last order-lg-first">
           <div class="feature-image text-center text-lg-start">
-            <img src="/assets/images/feature/feature-img-1.svg" alt="" />
+            <!-- <img src="/static/about.png" alt="" /> -->
           </div>
         </div>
         <div class="col-lg-6 col-xxl-5 col-md-10 offset-xxl-1">
           <div class="feature-content-wrapper">
             <div class="section-title">
-              <h2 class="mb-20">Manoranjan!</h2>
+              <h2 class="mb-20" id="check_about">Manoranjan!</h2>
+              <p class="mb-10"><i>Don't wait, just have some “Manoranjan!”</i></p>
               <p class="mb-30">
-                
+                 In the era of the 21st century, when the world is running at a speed that seems like the speed of air, All developers, workers, or any other working profession is so much busy in their world! But, What about Entertainment (Manoranjan!), Entertainment is not just for health but it is also good for our soul! For this, my Manoranjan website will help you, as it contains at least more than 5000 movie datasets according to your choice! You always search on google for movie ratings, and know about top casts! This recommendation engine will help you to solve this! You don’t need to google each and everything about movie. You have our “Manoranjan App” for this, not only this, you can add your favorite movie like a to-do list for later!
               </p>
-              <a href="/timeline" class="main-btn btn-hover border-btn"
-                >My timeline</a
+              <a href="#" class="main-btn btn-hover border-btn"
+                >How to use Manoranjan?</a
               >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="service" class="service-section img-bg pt-100 pb-100 mt-150">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-10">
+          <div class="section-title text-center mb-50">
+            <h1>Main features</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <div class="single-service">
+            <div class="icon color-1">
+              <img style="margin-top : 50px;
+              margin-right: 25px;" src="/static/reviews.svg">
+            </div>
+            <div class="content">
+              <h3>Review about the movie.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="single-service">
+            <div class="icon color-2">
+              <img style="margin-top : 10px; margin-right:10px;" src="/static/recomm.svg">
+            </div>
+            <div class="content">
+              <h3>Recommendations for similar types of movies.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="single-service">
+            <div class="icon color-3">
+              <img style="margin-top : 10px; margin-left: 35px" src="/static/wish.svg">
+            </div>
+            <div class="content">
+              <h3>Wish list for movies which you want to watch.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="single-service">
+            <div class="icon color-4">
+              <img style="margin-top : 50px;" src="/static/ratings.svg">
+            </div>
+            <div class="content">
+              <h3>Ratings on the scale of 10.</h3>
             </div>
           </div>
         </div>
@@ -146,19 +192,19 @@ overflow-x:hidden;}
   </section>
   <section id="feature-1" class="feature-section-1">
     <div class="shape-image">
-      <img src="/static/about.png" alt="" />
+      <img src="/static/feature-img-1.svg" alt="" />
     </div>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-last order-lg-first">
           <div class="feature-image text-center text-lg-start">
-            <img src="/assets/images/feature/feature-img-1.svg" alt="" />
+            <img src="/static/feature-img-1.svg" alt="" />
           </div>
         </div>
         <div class="col-lg-6 col-xxl-5 col-md-10 offset-xxl-1">
           <div class="feature-content-wrapper">
             <div class="section-title">
-              <h2 class="mb-20">Witness my journey through this timeline!</h2>
+              <h2 class="mb-20" id="timeline">Witness my journey through this timeline!</h2>
               <p class="mb-30">
                 Different challenges that I faced all through these 4 weeks,
                 how I overcame them and what I learnt from those mistakes.
@@ -173,83 +219,152 @@ overflow-x:hidden;}
     </div>
   </section>
   <!-- The Tour Section -->
-  <div class="w3-black" id="services" style="overflow-x:hidden;max-width:100%;">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" style="overflow-x:hidden;max-width:100%;">
-      <h2 class="w3-wide w3-center" >OUR SERVICES</h2>
-      <p class="w3-opacity w3-center"><i>We recommend,you watch!</i></p><br>
-
-      <!-- <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul> -->
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/static/movie7.avif" alt="Movie" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <!-- <p><b>New York</b></p> -->
-            <!-- <p class="w3-opacity">Fri 27 Nov 2016</p> -->
-            <p>Unveil movie details.</p>
-            <!--<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Login</button>-->
+  		<!-- ========================= faq-section start ========================= -->
+      <section id="faq" class="faq-section pt-120">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-5 col-xl-6 col-lg-7">
+              <div class="section-title text-center mb-60">
+                <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Frequently Asked Queries</h1>
+                <p class="mb-25 wow fadeInUp" data-wow-delay=".2s"> Manoranjan is basically a way for enjoy! </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion faq-wrapper" id="accordionExample">
+                <div class="single-faq">
+                  <button class="w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Can I also stream a movie?
+                  </button>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="faq-content">
+                      No, You only have recommendations for the movie. It is recommendation engine, not a streaming app.
+                    </div>
+                  </div>
+                </div>
+                <div class="single-faq">
+                  <button class="w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the use of Wish list?
+                  </button>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="faq-content">
+                      You can manually adds movie there and take a note of it for future use.
+                    </div>
+                  </div>
+                </div>
+                <div class="single-faq">
+                  <button class="w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is there are reviews and ratings for movies?
+                  </button>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="faq-content">
+                      Yes, there are reviews and ratings for each recommended movie.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="faq-image">
+                <img src="/static/faq-img.svg" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          
-          <div class="w3-container w3-white">
-            <!-- <p><b>Paris</b></p> -->
-            <!-- <p class="w3-opacity">Sat 28 Nov 2016</p> -->
-            <p>Suggest similar movies</p>
-            <!--<button class="w3-button w3-black w3-margin-bottom"> <a href="signup.html">SignUp</a></button>-->
-        
+      </section>
+
+
+
+<!-- Footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="widget-wrapper">
+      <div class="row">
+        <div class="col-xl-2 col-md-6">
+          <div class="footer-widget">
+            <h3>About Us</h3>
+            <ul class="links">
+              <li> <a href="javascript:void(0)">Home</a> </li>
+              <li> <a href="javascript:void(0)">Features</a> </li>
+              <li> <a href="javascript:void(0)">Timeline</a> </li>
+              <li> <a href="javascript:void(0)">FAQ</a> </li>
+            </ul>
           </div>
-          <img src="static/movie6.avif" alt="Paris" style="width:100%" class="w3-hover-opacity">
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="static/movie.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <!-- <p><b>San Francisco</b></p> -->
-            <!-- <p class="w3-opacity">Sun 29 Nov 2016</p> -->
-            <p>Display the reviews.</p>
-            <!--<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Check stats</button>-->
+        <div class="col-xl-3 col-md-6">
+          <div class="footer-widget">
+            <h3>Features</h3>
+            <ul class="links">
+              <li> <a href="javascript:void(0)">Easy to use</a> </li>
+              <li> <a href="javascript:void(0)">Work every device</a> </li>
+              <li> <a href="javascript:void(0)">Always up to date</a> </li>
+              <li> <a href="javascript:void(0)">Reviews and Ratings</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="footer-widget">
+            <h3>Support</h3>
+            <ul class="links">
+              <li> <a href="javascript:void(0)">Open-soruce</a> </li>
+              <li> <a href="javascript:void(0)">Privacy Policy</a> </li>
+              <li> <a href="javascript:void(0)">Terms of Service</a> </li>
+              <li> <a href="javascript:void(0)">Accessibility</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="footer-widget">
+            <h3>Have Manoranjan!</h3>
+            <ul class="download">
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="/static/logo.svg">
+                 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-right-wrapper">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copy-right">
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="socials">
+            <ul>
+              <li>
+                <a href="google.com"> <i class="lni lni-facebook-filled"></i> </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> <i class="lni lni-twitter-filled"></i> </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> <i class="lni lni-instagram-filled"></i> </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> <i class="lni lni-linkedin-original"></i> </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-
- 
- 
-  
-<!-- End Page Content -->
-</div>
-
-
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT US</h2>
-    <p class="w3-opacity w3-center"><i>Have an issue? We'll resolve!</i></p>
-    <div class="w3-row w3-padding-32 ">
-      <div class=" w3-large w3-margin-bottom" style="justify-content: center; text-align:center;">
-        <i class="fa fa-map-marker"  style="justify-content: center; text-align:center;"></i> prayagraj, INDIA<br>
-        <i class="fa fa-phone" style="justify-content: center; text-align:center;"></i> Phone: 8686867865<br>
-        <i class="fa fa-envelope" > </i> Email: example@mail.com<br>
-
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p id="contact"
-  style="font-family: Montserrat;color: white; width: 100%; margin: auto; text-align: center; margin-left: 50%;">
-  Copyright &copy; 2021- All rights reserved </p>
-  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
-
+<!-- Footer -->
 <script>
-  
+
 // Automatic Slideshow - change image every 4 seconds
  var myIndex = 0;
  carousel();

@@ -39,6 +39,9 @@ app = Flask(__name__)
 @app.route("/index")
 def index():
     return render_template('index.html')
+@app.route("/timeline")
+def timeline():
+    return render_template('timeline.html')
 @app.route("/home")
 def home():
     suggestions = get_suggestions()

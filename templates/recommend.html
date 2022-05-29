@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NEW</title>
+	<title>Manoranjan</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,14 +22,12 @@
 </head>
 
 <body id="content">
-
+  
 	<div class="results">
 	    <center>
-	      <h2 id="name" class="text-uppercase" style="font-family: 'Rowdies', cursive;">{{title}}</h2>
-	    </center>
-	</div>
-	<br/>
-
+        <h2 id="name" class="text-uppercase" style="font-family: 'Rowdies', cursive;">{{title}}</h2>
+      </center>
+    <br/>
   <div id="mycontent">
     <div id="mcontent">
       <div class="poster-lg">
@@ -99,7 +97,7 @@
             <div class="imghvr">
               <img class="card-img-top cast-img" id="{{details[0]}}" height="360" width="240" alt="{{name}} - profile" src="{{details[2]}}">
               <figcaption class="fig">
-                <button class="card-btn btn btn-danger"> Know More </button>
+                <button class="card-btn btn btn-primary"> Know More </button>
               </figcaption>
             </div>
             <div class="card-body" style="font-family: 'Rowdies', cursive;font-size: 18px;">
@@ -112,7 +110,39 @@
     {% endif %}
     <br/>
 
-  <center>
+  
+   
+ 
+    {% if movie_cards|length > 1 %}
+
+      <div class="movie" style="color: #E8E8E8;">
+        <center><h2 style="font-family: 'Rowdies', cursive;">RECOMMENDED MOVIES FOR YOU</h2><h5>(Click any of the movies to get recommendation)</h5></center>
+      </div>
+
+      <div class="movie-content">
+        {% for poster, details in movie_cards.items() if not movie_cards.hidden %}
+          <div class="card" style="width: 14rem;" title="{{details[1]}}" onclick="recommendcard(this)">
+            <div class="imghvr">
+              <img class="card-img-top" height="360" width="240" alt="{{details[0]}} - poster" src={{poster}}>
+              <div class="card-img-overlay" >
+                <span class="card-text" style="font-size:15px;background: #000000b8;color:white;padding:2px 5px;border-radius: 10px;"><span class="fa fa-star checked">&nbsp; {{details[2]}}/10</span></span>
+              </div>
+              <div class=".card-img-overlay" style="position: relative;">
+                <span class="card-text" style="font-size:15px;position:absolute;bottom:20px;left:15px;background: #000000b8;color:white;padding: 5px;border-radius: 10px;">{{details[3]}}</span>
+              </div>
+              <figcaption class="fig">
+                <button class="card-btn btn btn-primary"> Click Me </button>
+              </figcaption>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: 'Rowdies', cursive;font-size: 17px;">{{details[0]|upper}}</h5>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+<center>
     {% if reviews %}
     <h2 style="font-family: 'Rowdies', cursive;color:white">USER REVIEWS</h2>
      <div class="col-md-12" style="margin: 0 auto; margin-top:25px;">
@@ -159,39 +189,9 @@
         <h1 style="color:white"> Sorry, the reviews for this movie are not available! :( </h1>
       </div>
     {% endif %}
+    <br/><br/><br/><br/>
   </center>
   <br/>
-   
- 
-    {% if movie_cards|length > 1 %}
-
-      <div class="movie" style="color: #E8E8E8;">
-        <center><h2 style="font-family: 'Rowdies', cursive;">RECOMMENDED MOVIES FOR YOU</h2><h5>(Click any of the movies to get recommendation)</h5></center>
-      </div>
-
-      <div class="movie-content">
-        {% for poster, details in movie_cards.items() if not movie_cards.hidden %}
-          <div class="card" style="width: 14rem;" title="{{details[1]}}" onclick="recommendcard(this)">
-            <div class="imghvr">
-              <img class="card-img-top" height="360" width="240" alt="{{details[0]}} - poster" src={{poster}}>
-              <div class="card-img-overlay" >
-                <span class="card-text" style="font-size:15px;background: #000000b8;color:white;padding:2px 5px;border-radius: 10px;"><span class="fa fa-star checked">&nbsp; {{details[2]}}/10</span></span>
-              </div>
-              <div class=".card-img-overlay" style="position: relative;">
-                <span class="card-text" style="font-size:15px;position:absolute;bottom:20px;left:15px;background: #000000b8;color:white;padding: 5px;border-radius: 10px;">{{details[3]}}</span>
-              </div>
-              <figcaption class="fig">
-                <button class="card-btn btn btn-danger"> Click Me </button>
-              </figcaption>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'Rowdies', cursive;font-size: 17px;">{{details[0]|upper}}</h5>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-<br/><br/><br/><br/>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

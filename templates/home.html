@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Movie Cinema</title>
+  <title>Manoranjan</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,7 +23,46 @@
 
   <!-- External CSS -->
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
-
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+ <style>
+  body {font-family: "Lato", sans-serif;
+  margin:0;
+  overflow-x:hidden;
+}
+ul.topnav {
+      max-width:100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #203344;
+    }
+    
+    ul.topnav li {float: left;
+    }
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+    
+    ul.topnav li a.active {
+    /* background-color: #5b605f;*/
+      background-color: #694033;
+      }
+    
+    ul.topnav li.right {float: right;}
+    
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+    }
+    </style>
   <script type="text/javascript">
     var films = {{suggestions|tojson}};
     $(document).ready(function(){
@@ -33,13 +72,22 @@
 
 </head>
 
-<body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
+<body id="content">
 <div class="body-content">
+  <ul class="topnav">
+    <li><img src="/static/logo (2).svg" alt="Logo"></li>
+    <li><a style="margin-top:10px;" class="active" href="/">Home</a></li>
+    <li><a style="margin-top:10px;" href="#about">About</a></li>
+    <li><a style="margin-top:10px;" href="#services">Services</a></li>
+    <li><a style="margin-top:10px;" href="/home">Recommend</a></li>
+    <li><a style="margin-top:10px;" href="#contact">Contact</a></li>
+ 
+  </ul>
 	<div class="ml-container" style="display: block;">
 		<a href="https://github.com/kishan0725/The-Movie-Cinema" target="_blank" class="github-corner" title="View source on GitHub">
 		      <svg data-toggle="tooltip"
 		      data-placement="left" width="80" height="80" viewBox="0 0 250 250"
-			style="fill:#e50914; color:#fff; position: fixed;z-index:100; top: 0; border: 0; right: 0;" aria-hidden="true">
+			style="fill:#9109e5; color:#fff; position: fixed;z-index:100; top: 0; border: 0; right: 0;" aria-hidden="true">
 			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
 			<path
 			  d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
@@ -49,16 +97,34 @@
 			  fill="currentColor" class="octo-body"></path>
 		      </svg>
 		    </a>
-    <center><h1 class="app-title">The Movie Cinema</h1></center>
-    <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
-        <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
-        <br>
-    </div>
-
-    <div class="form-group" style="text-align: center;">
-      <button class="btn btn-primary btn-block movie-button" style="background-color: #e50914;text-align: center;border-color: #e50914;width:120px;" disabled="true" >Enter</button><br><br>
-    </div>
-	</div>
+        <section id="home" class="hero-section" style="margin-top:-25px; background-image:url('/static/home.svg')">
+          <div class="container" style="width:180%;">
+            <div class="row align-items-center">
+              <!-- <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10"> -->
+                <div class="hero-content" style="margin-top:20px;" style="display:flex">
+                  <h1 style="margin-top:-180px; margin-left:50px;">Search your favorite movie with <span>Manoranjan</span></h1>
+                 
+                  <div class="form-group shadow-textarea" style="margin-top: 30px; margin-left: -16%; "text-align: center;color: white;">
+                    <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818; border-radius: 1rem;" required="required" />
+                    <br>
+                </div>
+            
+                <div class="form-group" style="text-align: center;">
+                  <button class="btn btn-primary btn-block movie-button" style="background-color: #09d6e5;text-align: center;border-color: #09d6e5;width:120px; margin-right: 78%; color:black;" disabled="true" >Enter</button><br><br>
+                </div>
+              </div>
+                  
+                </div>
+              </div>
+              
+                  
+                
+            
+            <div style="display:flex; height:700px;width:700px;">
+              <img style="margin-right: 50px;" src="/static/search_movie.png" alt="" /></div>
+          </div>
+        </section>
+        
 
   <div id="loader" class="text-center">
   </div>
@@ -77,7 +143,7 @@
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
-        <div class="modal-header" style="background-color: #e50914;color: white;">
+        <div class="modal-header" style="background-color: #0d09e581;color: white;">
           <h5 class="modal-title" id="exampleModalLabel3">Hey there!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true" style="color: white">&times;</span>
@@ -92,8 +158,9 @@
       </div>
     </div>
   </div>
-	
-	<footer class="footer">
+</div>
+</div>
+	<footer class="footer_1">
     <br/> 
     <div class="social" style="margin-bottom: 8px">
     <a class="social-icons" href="https://github.com/kishan0725" target="_blank"><i class="fa fa-github-alt" style="font-size:24px;color: #e4e0e0"></i></a>
@@ -103,7 +170,7 @@
     <a class="social-icons" href="https://twitter.com/kishan0725" target="_blank"><i class="fa fa-twitter" style="font-size:24px;color: #e4e0e0"></i></a>
   </div>
   </footer>
-	</div>
+
 	
 	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
   <script type="text/javascript" src="{{url_for('static', filename='autocomplete.js')}}"></script>

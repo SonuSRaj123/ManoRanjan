@@ -1,12 +1,4 @@
-/* ============================
-  Template Name: Blaze
-  Author: uideck
-  Description: Bootstrap 5 SaaS Landing Page.
-  Version: 1.0
-=============================== */
-/*===========================
-		COMMON css
-===========================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 html {
   scroll-behavior: smooth;
@@ -663,7 +655,7 @@ p {
   height: 820px;
   display: flex;
   align-items: center;
-  background-image: url("/static/hero-bg.svg");
+ 
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -891,7 +883,7 @@ margin-top: 20px;
 
 /* ============== service css ==============*/
 .service-section {
-  background-image: url("../images/service/service-bg.jpg");
+  background-image: url("/static/service-bg.jpg");
 }
 
 .service-section .single-service {
@@ -907,7 +899,7 @@ margin-top: 20px;
 }
 
 .service-section .single-service:hover .icon.color-1 {
-  background: #FB32FB;
+  background: #5A37FF; 
 }
 
 .service-section .single-service:hover .icon.color-2 {
@@ -919,12 +911,13 @@ margin-top: 20px;
 }
 
 .service-section .single-service:hover .icon.color-4 {
-  background: #5A37FF;
+
+  background: #FB32FB;
 }
 
 .service-section .single-service .icon {
-  width: 95px;
-  height: 95px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -937,19 +930,19 @@ margin-top: 20px;
 }
 
 .service-section .single-service .icon.color-1 {
-  background: #FFEFFF;
+  background: #ff8aff;
 }
 
 .service-section .single-service .icon.color-2 {
-  background: #E4E9FF;
+  background: #5572f7;
 }
 
 .service-section .single-service .icon.color-3 {
-  background: #FFEAEA;
+  background: #f59d9d;
 }
 
 .service-section .single-service .icon.color-4 {
-  background: #ECE8FF;
+  background: #150aae;
 }
 
 .service-section .single-service .content h3 {
@@ -1042,10 +1035,206 @@ margin-top: 20px;
   max-width: 100%;
 }
 
+.faq-section .faq-wrapper {
+    margin-right: 50px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .faq-section .faq-wrapper {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .faq-section .faq-wrapper {
+      margin-right: 0;
+    }
+  }
+  
+  .faq-section .single-faq {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px rgba(142, 142, 142, 0.16);
+  }
+  
+  .faq-section .single-faq button {
+    background: #fff;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    padding: 18px 25px;
+    padding-right: 45px;
+    position: relative;
+    color: #1D2A5D;
+  }
+  
+  .faq-section .single-faq button.collapsed {
+    opacity: .8;
+  }
+  
+  .faq-section .single-faq button.collapsed::after {
+    transform: rotate(0deg);
+  }
+  
+  .faq-section .single-faq button::after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    border-top: 9px solid #60698D;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transition: all 0.3s ease-out 0s;
+    transform: rotate(180deg);
+  }
+  
+  .faq-section .single-faq .faq-content {
+    padding: 7px 25px 18px;
+  }
+  
+  .faq-section .faq-image img {
+    width: 100%;
+  }
 /* ==========================
     FOOTER CSS
 ============================= */
 .footer {
+    padding-top: 350px;
+    background-image: url("../static/footer-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+      padding-top: 220px;
+      margin-top: 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      padding-top: 160px;
+      margin-top: 100px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      padding-top: 120px;
+      margin-top: 100px;
+    }
+  }
+  
+  .footer .widget-wrapper .footer-widget {
+    margin-bottom: 40px;
+  }
+  
+  .footer .widget-wrapper .footer-widget h3 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  
+  .footer .widget-wrapper .footer-widget .links li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .footer .widget-wrapper .footer-widget .links li a:hover {
+    padding-left: 6px;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download li:first-child {
+    margin-right: 20px;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download li a {
+    display: inline-flex;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download li a .icon {
+    font-size: 30px;
+    color: #1D2A5D;
+    margin-right: 10px;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download li a .text {
+    font-size: 10px;
+    color: #60698D;
+  }
+  
+  .footer .widget-wrapper .footer-widget .download li a .text b {
+    color: #1D2A5D;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+  }
+  
+  .footer .copy-right-wrapper {
+    border-top: 2px solid rgba(255, 255, 255, 0.17);
+    padding: 25px 0;
+  }
+  
+  .footer .copy-right-wrapper .copy-right p {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 16px;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .copy-right-wrapper .copy-right p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .footer .copy-right-wrapper .copy-right p a {
+    color: inherit;
+  }
+  
+  .footer .copy-right-wrapper .copy-right p a:hover {
+    color: #fff;
+  }
+  
+  .footer .copy-right-wrapper .socials ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .copy-right-wrapper .socials ul {
+      justify-content: center;
+    }
+  }
+  
+  .footer .copy-right-wrapper .socials ul li a {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  .footer .copy-right-wrapper .socials ul li a:hover {
+    color: #fff;
+  }
+  
+/* .footer {
   background-image: url("../images/footer/footer-bg.svg");
   background-size: cover;
   background-position: center;
@@ -1187,7 +1376,7 @@ margin-top: 20px;
 
 .footer .footer-social ul li a:hover {
   background: #00B06E;
-}
+} */
 
 /* ======================
     DEFAULT CSS
