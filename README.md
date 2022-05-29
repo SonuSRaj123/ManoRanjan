@@ -1,8 +1,8 @@
 # ManoRanjan
 ## Submission for Microsoft Engage 2022🌟
 
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?logo=github&style=for-the-badge)](https://github.com/bhavyastar/) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/) 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?logo=github&style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan) 
+[![GitHub last commit](https://img.shields.io/github/last-commit/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/ManoRanjan) 
 [![My stars](https://img.shields.io/github/stars/bhavyastar?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/bhavyastar/ManoRanjan/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/ManoRanjan/network)
 [![Code size](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan)
@@ -21,13 +21,7 @@
 
 The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
 
-## Demo Video Link:
- https://drive.google.com/drive/folders/1VNjMtKeosoaVH9eSgTQt5eE_XnD_qz5m?usp=sharing
-
-## Website Link:
-  https://manoranjan-engage.herokuapp.com/
-
-  Don't worry if the movie that you are looking for is not auto-suggested. Just type the movie name and click on "enter". You will be good to go even though if you made some typo errors.
+Don't worry if the movie that you are looking for is not auto-suggested. Just type the movie name and click on "enter". You will be good to go even though if you made some typo errors.
 
 ## Table of Contents:
 * [ How to run the project? ](#how_to)
@@ -35,7 +29,7 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 * [ Tech Stack ](#technologystack)
 * [ Workflow  ](#models) 
 * [ Future Plans ](#futureplans)
-* [ Features ](#images)
+
 
 ## <a name="how_to"></a>How to run the project?
 1) Clone this repository on your system.
@@ -72,6 +66,17 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 ## <a name="futureplans"></a>Future Plans:
  * Implement collaborative filtering based recommender.
 
+ ## Useful Links
+
+- [Deployed Website](https://manoranjan-engage.herokuapp.com/)
+- [Demo Video](https://drive.google.com/drive/folders/1VNjMtKeosoaVH9eSgTQt5eE_XnD_qz5m?usp=sharing)
+- [Presentation](https://docs.google.com/presentation/d/1QMCZ0GPt7kDpQuyu11ForlR4wIGARAjmxWOkNgfhyEA/edit?usp=sharing)
+
+## Need help?
+
+Feel free to contact me on  
+ [![Twitter](https://img.shields.io/badge/Twitter-follow-blue.svg?logo=twitter&logoColor=white)](https://twitter.com/bhavya_58)
+
  ### Sources of the datasets 
 
 1. [IMDB 5000 Movie Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset)
@@ -80,7 +85,15 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 4. [List of movies in 2019](https://en.wikipedia.org/wiki/List_of_American_films_of_2019)
 5. [List of movies in 2020](https://en.wikipedia.org/wiki/List_of_American_films_of_2020)
 
-Please do ⭐ the repository, if it helped you in anyway.
+---------
+
+```javascript
+if (youEnjoyed) {
+  starThisRepository();
+}
+```
+
+-----------
 
 
 
