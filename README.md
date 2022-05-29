@@ -37,7 +37,7 @@ Don't worry if the movie that you are looking for is not auto-suggested. Just ty
 1) Clone this repository on your system.
 2) Install all the requirements mentioned in [requirements.txt](https://github.com/bhavyastar/ManoRanjan/blob/main/requirements.txt) by typing `pip install -r requirements.txt` on your terminal.
 3) Also, don't forget to get your API key from https://www.themoviedb.org/. .
-4) Replace my api key with yours in **both** the places (line no. 16 and 30) of `static/recommend.js` file .
+4) Replace my api key with yours in **both** the places (line no. 23 and 43) of `static/recommend.js` file .
 5) Save all the changes.
 6) Run the file `main.py` by executing the command `python main.py`.
 7) Hurray! Have ManoRanjan.
