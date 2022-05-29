@@ -3,14 +3,13 @@
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?logo=github&style=for-the-badge)](https://github.com/bhavyastar/) 
 [![GitHub last commit](https://img.shields.io/github/last-commit/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/) 
-[![GitHub stars](https://img.shields.io/github/stars/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/awaaz/stargazers) 
-[![My stars](https://img.shields.io/github/stars/bhavyastar?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/bhavyastar/awaaz/stargazers) 
-[![GitHub forks](https://img.shields.io/github/forks/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/awaaz/network)
-[![Code size](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/awaaz)
-[![Languages](https://img.shields.io/github/languages/count/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/awaaz)
-[![Top](https://img.shields.io/github/languages/top/bhavyastar/ManoRanjan?style=for-the-badge&label=Top%20Languages)](https://github.com/bhavyastar/awaaz)
-[![Issues](https://img.shields.io/github/issues/bhavyastar/ManoRanjan?style=for-the-badge&label=Issues)](https://github.com/bhavyastar/awaaz)
-[![Watchers](	https://img.shields.io/github/watchers/bhavyastar/ManoRanjan?label=Watch&style=for-the-badge)](https://github.com/bhavyastar/awaaz/) 
+[![My stars](https://img.shields.io/github/stars/bhavyastar?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=My%20stars)](https://github.com/bhavyastar/ManoRanjan/stargazers) 
+[![GitHub forks](https://img.shields.io/github/forks/bhavyastar/ManoRanjan?style=for-the-badge&logo=git)](https://github.com/bhavyastar/ManoRanjan/network)
+[![Code size](https://img.shields.io/github/languages/code-size/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan)
+[![Languages](https://img.shields.io/github/languages/count/bhavyastar/ManoRanjan?style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan)
+[![Top](https://img.shields.io/github/languages/top/bhavyastar/ManoRanjan?style=for-the-badge&label=Top%20Languages)](https://github.com/bhavyastar/ManoRanjan)
+[![Issues](https://img.shields.io/github/issues/bhavyastar/ManoRanjan?style=for-the-badge&label=Issues)](https://github.com/bhavyastar/ManoRanjan)
+[![Watchers](	https://img.shields.io/github/watchers/bhavyastar/ManoRanjan?label=Watch&style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan/) 
 ![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
@@ -23,7 +22,7 @@
 The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
 
 ## Demo Video Link:
-  https://drive.google.com/drive/folders/1CYe60EISbo3BZdVtXii8bPcQyT7yz9C4
+ https://drive.google.com/drive/folders/1VNjMtKeosoaVH9eSgTQt5eE_XnD_qz5m?usp=sharing
 
 ## Website Link:
   https://manoranjan-engage.herokuapp.com/
@@ -53,11 +52,13 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 
 ## <a name="features"></a>Features :
 1) Autocomplete- While searching for the movie, you are automatically suggested to fill it.
-2) Unveil movie details-The name of the movie, genre, release date, overview, poster card are fetched from the api and displayed elegantly.
+2)Movie Details-The name of the movie, genre, release date, overview, poster card are fetched from the api and displayed elegantly.
 3) Movie cast- Top 10 cast of the movie is showcased with their original name and the name of the character in the movie.
 4) Poster Card- You can click on 'Know More' to get to know more about your favourite cast,
-5) Suggest similar movies- Display top 10 Recommended movies based on sentiments analysis
+5) Suggest similar movies- Display top Recommended movies based on sentiments analysis
 6) Reviews fetched from IMDB api are displayed on which sentiment analysis is done. 
+7) Supports every type of Movie.
+8) Wish List.
 
 ## <a name="technologystack"></a>Tech Stack:
 * _Python(Flask)_
