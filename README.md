@@ -15,6 +15,7 @@
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
+![Screenshot (427)](https://user-images.githubusercontent.com/84725791/170883315-e70c4489-b62b-4a7b-8edd-8e8d82880d94.png)
 
 ## INTRODUCTION:
   In the era of the 21st century, when the world is running at a speed that seems like the speed of air, All developers, workers, or any other working profession is so much busy in their world! But, What about Entertainment (Manoranjan!), Entertainment is not just for health but it is also good for our soul! For this, my Manoranjan website will help you, as it contains at least more than 5000 movie datasets according to your choice! You always search on google for movie ratings, and know about top casts! This recommendation engine will help you to solve this! You don’t need to google each and everything about movie. You have our “Manoranjan App” for this, not only this, you can add your favorite movie like a to-do list for later!
@@ -46,14 +47,55 @@ Don't worry if the movie that you are looking for is not auto-suggested. Just ty
 Create an account in https://www.themoviedb.org/, click on the `API` link from the left hand sidebar in your account settings and fill all the details to apply for API key. If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key in your `API` sidebar once your request is approved.
 
 ## <a name="features"></a>Features :
-1) Autocomplete- While searching for the movie, you are automatically suggested to fill it.
-2)Movie Details-The name of the movie, genre, release date, overview, poster card are fetched from the api and displayed elegantly.
-3) Movie cast- Top 10 cast of the movie is showcased with their original name and the name of the character in the movie.
-4) Poster Card- You can click on 'Know More' to get to know more about your favourite cast,
-5) Suggest similar movies- Display top Recommended movies based on sentiments analysis
-6) Reviews fetched from IMDB api are displayed on which sentiment analysis is done. 
-7) Supports every type of Movie.
-8) Wish List.
+1. Landing Page 
+   - Seamless landing page with `Wishlist` button for adding movies
+   
+    ![Screenshot (397)](https://user-images.githubusercontent.com/84725791/170882590-a2086c27-707f-41cb-aec0-2ee38e46249d.png)
+    
+   - About ManoRanjan
+   
+   ![Screenshot (386)](https://user-images.githubusercontent.com/84725791/170882631-0c435828-4e66-42a3-8315-d8d93560f3f0.png)
+   
+   - My Agile timeline Journey
+   
+   ![Screenshot (415)](https://user-images.githubusercontent.com/84725791/170882687-afc211ac-2082-40e3-b2c4-898fe2a72121.png)
+
+2. Recommendation Page 
+
+   ![Screenshot (406)](https://user-images.githubusercontent.com/84725791/170882736-c7d95747-0a3a-4c6e-bcf7-5c8e8f4964c3.png)
+
+   
+3) Autocomplete
+   - While searching for the movie, you are automatically suggested to fill it.
+   
+   ![Screenshot (408)](https://user-images.githubusercontent.com/84725791/170882753-ab4552ef-5f5d-4ee9-92c5-4e168ca145d9.png)
+  
+4)Movie Details
+   -The name of the movie, genre, release date, overview, poster card are fetched from the api and displayed elegantly.
+   
+   ![Screenshot (423)](https://user-images.githubusercontent.com/84725791/170883078-1ea3033f-f405-43c3-a979-0531e36be3ab.png)
+   
+5) Movie cast
+   -Top cast of the movie is showcased with their original name and the name of the character in the movie.
+   
+   ![Screenshot (424)](https://user-images.githubusercontent.com/84725791/170883133-1c6def1b-d31a-44f5-be06-ae2a11b6d2f8.png)
+   
+6) Poster Card
+   - You can click on 'Know More' to get to know more about your favourite cast.
+   
+   ![Screenshot (425)](https://user-images.githubusercontent.com/84725791/170883174-8dad9018-e6ef-4a9f-9dec-bf05fac65f6e.png)
+
+7) Suggest similar movies
+    - Display top Recommended movies based on sentiments analysis
+    
+    ![Screenshot (426)](https://user-images.githubusercontent.com/84725791/170883230-466fd8dd-6048-484a-9cd4-5537996eacc8.png)  
+
+8) Reviews fetched from IMDB api are displayed on which sentiment analysis is done. 
+
+   - ![Screenshot (427)](https://user-images.githubusercontent.com/84725791/170883332-2e919b5f-60f8-4631-837c-a52510a010bc.png)
+
+12) Supports every type of Movie.
+13) Wish List.
 
 ## <a name="technologystack"></a>Tech Stack:
 * _Python(Flask)_
@@ -90,6 +132,7 @@ Feel free to contact me on
 
 ```javascript
 if (youEnjoyed) {
+
   starThisRepository();
 }
 ```
