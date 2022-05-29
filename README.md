@@ -11,7 +11,6 @@
 [![Issues](https://img.shields.io/github/issues/bhavyastar/ManoRanjan?style=for-the-badge&label=Issues)](https://github.com/bhavyastar/ManoRanjan)
 [![Watchers](	https://img.shields.io/github/watchers/bhavyastar/ManoRanjan?label=Watch&style=for-the-badge)](https://github.com/bhavyastar/ManoRanjan/) 
 
-<br></br>
 ![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
